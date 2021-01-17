@@ -2,12 +2,15 @@
 
 namespace App\Models;
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Contracts\Auth\MustVerifyEmail; // if use email verify, delete
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+// use Illuminate\Contracts\Auth\MustVerifyEmail as MustVerifyEmailContract;    // if use email verify, add
+// use Illuminate\Auth\MustVerifyEmail; // if use email verify, add
 
-class User extends Authenticatable
+class User extends Authenticatable // if use email verify, delete
+// class User extends Authenticatable implements MustVerifyEmailContract    // if use email verify, add
 {
     use HasFactory, Notifiable;
 

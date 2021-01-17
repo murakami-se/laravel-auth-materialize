@@ -1,0 +1,4 @@
+input {
+    padding-left: map-get($map: $spacers, $key: 2) !important;
+    padding-right: map-get($map: $spacers, $key: 2) !important;
+}

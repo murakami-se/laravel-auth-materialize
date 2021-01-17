@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes(); // if use email verify, delete
+// Auth::routes(['verify' => true]); // if use email verify, add
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home'); // if use email verify, delete
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('verified'); // if use email verify, add
