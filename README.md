@@ -43,7 +43,7 @@ If you want to use it, change the following settings.
         ...
     ```
 
-### Use emain verify
+### Use email verify
 
 If you want to use email verify, change the following settings.
 
